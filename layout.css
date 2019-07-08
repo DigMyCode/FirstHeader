@@ -32,7 +32,7 @@ header {
     margin: 0;
     position: relative;
     padding: 2% 5%;
-    font-size: 20px;
+    font-size: 25px;
     font-family:  arial;
     bottom: 10px;
     width: 22vw;
@@ -72,13 +72,14 @@ header {
     z-index: 1;
     width: 100%;
     display: none;
+    border-top: 1px solid #1a1a1a;
 }
 
 .navigation-list__button-content a {
     text-decoration: none;
     display: block;
     color: white;
-    background: linear-gradient(to right, #cc0000 0%, #990000 33%);
+    background: #990000;
     height: 28px;
     padding: 0 0 0 15px;
 }
@@ -102,7 +103,7 @@ header {
 }
 
 @media only screen and (max-width: 600px) {
-#blog, #about {
+#about, #contact  {
     display: none;
 }
 }
@@ -154,7 +155,7 @@ header {
 .row {
     /*padding: 0 0 0 17%;*/
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     width: 85%;
     margin: 0 auto;
@@ -162,12 +163,79 @@ header {
 
 
 .row__img1 {
-    width: 23vmax;
+    width: 38vmin;
     height: 28vmin;
     margin: 0 0px 15px 0px;
     box-shadow:  2px 2px 9px;
 }
 
+#photo-gallery {
+    padding-top: 35px;
+    padding-bottom: 77px;    
+}
+
 .row__img1:hover {
     opacity: 0.8;
+}
+
+.block__header {
+    text-align: center;
+    margin: 0 0 30px 0;
+    font-size: 35px;
+    font-family: arial;
+    text-shadow: 0 1px 1px grey;
+}
+
+.block--white {
+    background: #f2f2f2;
+    padding: 20px 0 55px 0px;
+    text-align: center;
+    font-family: arial;
+    
+}
+
+
+.block--white img {
+    width: 64px;
+    height: 64px;  
+} 
+
+#features__title {
+    font-size: 35px;
+    margin-top: 0;
+    text-shadow: 0 1px 1px grey;
+}
+
+.block__features {
+    width: 25%;
+    margin: 1% 2%;
+    height: 30vmin;
+    display: inline-block;
+    box-shadow: 1px 2px 5px grey;
+    font-family: arial;
+    text-align: center;
+    
+}
+
+.block__features p {
+    margin: 5% 10px 5% 10px;
+}
+
+footer {
+    background: #24292e;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+.block__features  {
+    width: 70%;
+}
+}
+
+.block--white span {
+    display: block; 
+    margin-top: 40px;
+    font-family: arial;
+    font-size: 28px;
+    text-shadow: 0 1px 1px grey;
 }
